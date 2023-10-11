@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kółko i krzyżyk</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container rainbow-mode">
+      <div class="header">
+        <h1>Kółko i krzyżyk</h1>
+      </div>
+      <div class="game">
+        <div class="board">
+          <div class="row">
+            <div class="cell" onclick="makeMove(0)"></div>
+            <div class="cell" onclick="makeMove(1)"></div>
+            <div class="cell" onclick="makeMove(2)"></div>
+          </div>
+          <div class="row">
+            <div class="cell" onclick="makeMove(3)"></div>
+            <div class="cell" onclick="makeMove(4)"></div>
+            <div class="cell" onclick="makeMove(5)"></div>
+          </div>
+          <div class="row">
+            <div class="cell" onclick="makeMove(6)"></div>
+            <div class="cell" onclick="makeMove(7)"></div>
+            <div class="cell" onclick="makeMove(8)"></div>
+          </div>
+        </div>
+        <div class="info">
+          <div class="current-player">
+            <h2>Teraz ruch ma:</h2>
+            <h1 id="current-player">X</h1>
+          </div>
+          <div class="score">
+            <h2>Wynik:</h2>
+            <div class="player-x-score">
+              <h3>Gracz X:</h3>
+              <h1 id="player-x-score">0</h1>
+            </div>
+            <div class="player-o-score">
+              <h3>Gracz O:</h3>
+              <h1 id="player-o-score">0</h1>
+            </div>
+            <div class="draw-score">
+              <h3>Remis:</h3>
+              <h1 id="draw-score">0</h1>
+            </div>
+          </div>
+          <div class="move-count">
+            <h2>Liczba ruchów:</h2>
+            <h1 id="move-count">0</h1>
+          </div>
+          <div class="reset">
+            <button onclick="resetBoard()">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
